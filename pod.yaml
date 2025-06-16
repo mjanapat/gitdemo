@@ -1,0 +1,15 @@
+pod.yaml 
+---
+
+apiVersion: apps/v1
+kind : Pod
+metadata:
+  name: pihpod
+  labels:
+    app: pihpod
+spec:
+  containers:
+    - name: pih-dev-container
+      image: inginx:latest
+      ports:
+        - containerPort: 80
